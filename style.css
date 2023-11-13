@@ -1,0 +1,55 @@
+.calc {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, 70px));
+    grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr;
+    width: 350px;
+    gap: 15px;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+button {
+    background-color: #075959;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.display {
+    background-color: #075959;
+    grid-column: 1 / 5;
+    color: white;
+    padding: 15px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.box {
+    background-color: #628b81;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+}
+
+.previous-operand {
+    font-size: 15px;
+}
+
+.current-operand {
+    font-size: 24px;
+    padding-top: 7px;
+}
